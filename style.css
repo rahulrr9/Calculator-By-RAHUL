@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+   margin: 30px;
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 5px;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+}
+
+#input {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#result {
+    width: 90%;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    padding: 2px 10px 2px 10px;
+    font-size: 30px;
+    color: rgb(15, 14, 14);
+    border-radius: 10px;
+
+    border: none;
+    outline: none;
+}
+
+.btnac {
+    width: 200px;
+    padding: 7px 0px 7px 0px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn1c {
+    width: 80px;
+}
+.btn:hover , .btnr:hover ,.btn1:hover , .btn2:hover
+{
+    opacity: 0.5;
+    
+}
+.btn , .btn1 {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 10px 5px 0px 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+}
+.btnr{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 10px 5px 0px 5px;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+
+}
+.btn2 {
+    width: 135px !important;
+    height: 60px;
+    padding: 5px;
+    margin: 10px 5px 0px 5px;
+    background-color: black;
+    outline: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.footer {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 40px ;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .btnac {
+        width: 60%;
+    }
+    .btn1c {
+        width: 20%;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        background-image: url(back.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+
+    }
+</style>
+ <!-- favicon -->
+ <link rel="icon" href="icon.jpg" type="image/gif" sizes="16x16" />
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>CALCULATOR</h1>
+        </div>
+
+        <div class="input">
+            <input type="text" readonly="readonly" name="input" id="input">
+        </div>
+
+        <div  class="result">
+            <input type="text" readonly id="result" multiple>
+        </div>
+
+        <div>
+            <button class="btnr"  onclick="clearone()" style="background-color: rgb(212, 62, 62);color: white">C</button>
+            <button class="btn" value="&#8730;" onclick="sqrt()" style="background-color: rgb(12, 10, 10);color: white;">&#8730</button>
+            <button class="btn"  value="X^2" onclick="power()" style="background-color: rgb(10, 8, 8);color: white;">x^2</button>
+            <button class="btnr" onclick="clearall()" style="background-color:crimson;color: white;">Del</button>
+            
+            <div>
+
+        <div>
+
+            <button class="btn" onclick="getNumber('7')">7</button>
+            <button class="btn" onclick="getNumber('8')">8</button>
+            <button class="btn" onclick="getNumber('9')">9</button>
+            <button class="btnr" onclick="getNumber('*')"  style="background-color: red;color: black;">X </button>
+
+
+        </div>
+
+        <div>
+
+            <button class="btn" onclick="getNumber('4')">4</button>
+            <button class="btn" onclick="getNumber('5')">5</button>
+            <button class="btn" onclick="getNumber('6')">6</button>
+            <button class="btnr" onclick="getNumber('-')"  style="background-color: red;color: black;">-</button>
+
+
+        </div>
+        <div>
+
+            <button class="btn" onclick="getNumber('1')">1</button>
+            <button class="btn" onclick="getNumber('2')">2</button>
+            <button class="btn" onclick="getNumber('3')">3</button>
+            <button class="btnr" onclick="getNumber('+')"  style="background-color: red;color: black;">+</button>
+
+
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('0')">0</button>
+            <button class="btn" onclick="getNumber('.')">.</button>
+            <button class="btn" onclick="getNumber('00')">00</button>
+            <button class="btnr" onclick="getNumber('/')" style="background-color: red;color: black;">/</button>
+        </div>
+        <div>
+            <button class="btn1" onclick="getNumber('%')" style="background-color: grey;color: white;">%</button>
+            <button class="btn1" value="X^3" onclick="cube()" style="background-color: grey;color: white;">X^3</button>
+            <button class="btn2 equal" onclick=" calculateResult()" style="width: 107px;background-color: green;color: white">=</button>
+        </div>
+        
+        <div class="footer">
+            <center><h5 style="color:white;font-size:large">&copy;2020 || All right reserved by<a style="color:white;font-size:large;"> RAHUL ROSHAN</a> </h5></center>
+            <center><h5 style="color:white;font-size:large"><a style="color:white;font-size:large;">ROLL NO# WM9491</a> </h5></center>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
